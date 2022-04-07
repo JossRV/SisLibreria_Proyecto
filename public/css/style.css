@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/fondo_libreria3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.696)),url("../img/fondo_libreria3.jpg");
     font-family: cursive;
 }
 .formulario{
