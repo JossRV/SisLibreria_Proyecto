@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6 formulario">
-                <h1 class="display3 mb-4 mt-3">Iniciar Session</h1>
-                <img src="public/img/usuario (2).png" alt="" style="width: 20%">
-                <form action="./procesos/usuarios/login.php" method="post">
+                <h1 class="display3 mb-4 mt-3">Iniciar Sesión</h1>
+                <img src="public/img/usuario (2).png" disabled alt="" style="width: 20%">
+                <form action="procesos/usuarios/login.php" method="post">
                     <div class="form-floating">
                         <input required="" type="text" class="form-control mt-3" name="usuario" id="usuarioLogin" placeholder="usuario">
                         <label for="">Usuario</label>
@@ -26,11 +26,10 @@
                         <input required="" type="password" class="form-control mt-3" name="password" id="passLogin" placeholder="password">
                         <label for="">Contraseña</label>
                     </div>
-                    <button type="submit" class="btn btn-outline-dark mt-3 mb-3 container-fluid" id="boton_inicioSesion">Iniciar session</button>
+                    <button type="submit" class="btn btn-outline-dark mt-3 mb-3 container-fluid" id="boton_inicioSesion">Iniciar sesión</button>
                     <!-- <a href="">¿Olvidastes tu contraseña? </a> -->
                     <!-- <br> -->
                     <a href="#modalResgitrate" data-bs-toggle="modal" data-bs-target="">Registrate</a>
-                    <?php require_once "view/vista_registrarse.php" ?>
                 </form>
             </div>
             <div class="col-3"></div>
@@ -56,19 +55,19 @@
                                     <label for="">Nombre/s</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoP" id="" placeholder="nombre">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoP" id="paternoReg" placeholder="paterno">
                                     <label for="">Apellido paterno</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoM" id="" placeholder="nombre">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoM" id="maternoReg" placeholder="materno">
                                     <label for="">Apellido materno</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="usuario" id="" placeholder="nombre">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="usuario" id="usuarioReg" placeholder="usuario">
                                     <label for="">Usuario</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="password" id="" placeholder="nombre">
+                                    <input required="" autocomplete="off" type="password" class="form-control mt-3" name="password" id="passReg" placeholder="pass">
                                     <label for="">Contraseña</label>
                                 </div>
                             </div>

@@ -6,4 +6,4 @@
 <script src="<?=DEP_JS?>bootstrap5.js"></script>
 <script src="<?=DEP_JS?>sweetalert.js"></script>
 <script src="<?=DEP_FONTAWESOME6?>js/all.min.js"></script>
-<script src="<?= CONTROLLER ?>validacion.js"></script>
+<!-- <script src="<?= CONTROLLER ?>validacion.js"></script> -->

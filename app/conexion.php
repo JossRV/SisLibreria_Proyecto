@@ -11,10 +11,10 @@
                 return $conexion;
             }
         }
-        $obj= new Conexion();
-        if ($obj->conectar()) {
-            echo "conexion correcta";
-        }else{
-            echo "no hay conexion";
-        }
+        // $obj= new Conexion();
+        // if ($obj->conectar()) {
+        //     echo "conexion correcta";
+        // }else{
+        //     echo "no hay conexion";
+        // }
     ?>
