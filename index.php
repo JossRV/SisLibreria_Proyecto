@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     require_once "app/config.php";
     require_once "app/dependencias.php";
 ?>
@@ -16,16 +17,16 @@
             <div class="col-6 formulario">
                 <h1 class="display3 mb-4 mt-3">Iniciar Session</h1>
                 <img src="public/img/usuario (2).png" alt="" style="width: 20%">
-                <form action="" method="post">
+                <form action="./procesos/usuarios/login.php" method="post">
                     <div class="form-floating">
-                        <input type="text" class="form-control mt-3" name="usuario" id="usuarioLogin" placeholder="usuario">
+                        <input required="" type="text" class="form-control mt-3" name="usuario" id="usuarioLogin" placeholder="usuario">
                         <label for="">Usuario</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control mt-3" name="usuario" id="passLogin" placeholder="password">
+                        <input required="" type="password" class="form-control mt-3" name="password" id="passLogin" placeholder="password">
                         <label for="">Contraseña</label>
                     </div>
-                    <button class="btn btn-outline-dark mt-3 mb-3 container-fluid">Iniciar session</button>
+                    <button type="submit" class="btn btn-outline-dark mt-3 mb-3 container-fluid" id="boton_inicioSesion">Iniciar session</button>
                     <!-- <a href="">¿Olvidastes tu contraseña? </a> -->
                     <!-- <br> -->
                     <a href="#modalResgitrate" data-bs-toggle="modal" data-bs-target="">Registrate</a>
@@ -37,3 +38,80 @@
     </div>
 </body>
 </html>
+<!-- Modal registro -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form action="procesos/usuarios/insertarUser.php" method="post">
+                <div class="modal fade" id="modalResgitrate">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Registrate!</h5>
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="nombre" id="nombreReg" placeholder="nombre">
+                                    <label for="">Nombre/s</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoP" id="" placeholder="nombre">
+                                    <label for="">Apellido paterno</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="apellidoM" id="" placeholder="nombre">
+                                    <label for="">Apellido materno</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="usuario" id="" placeholder="nombre">
+                                    <label for="">Usuario</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input required="" autocomplete="off" type="text" class="form-control mt-3" name="password" id="" placeholder="nombre">
+                                    <label for="">Contraseña</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-outline-dark">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<?php
+   if (isset($_SESSION['loginIn'])==1) {
+    echo "
+        <script>
+            // alert('Insertado con exito');
+            swal({
+                title:'Credenciales Incorrectas',
+                text:'Revise sus datos',
+                icon:'error',
+                button:'Aceptar',
+            });
+            // swal('insertado con exito');
+        </script>
+    ";
+    unset($_SESSION['loginIn']);
+}
+if (isset($_SESSION['cerrarSesion'])==1) {
+    echo "
+        <script>
+            // alert('Sesión cerrada con exito');
+            swal({
+                title:'Sesión cerrada con exito',
+                text:'Lo esperaremos para su siguiente visita',
+                icon:'success',
+                button:'Aceptar',
+            });
+            // swal('insertado con exito');
+        </script>
+    ";
+    unset($_SESSION['cerrarSesion']);
+} 
+?>
