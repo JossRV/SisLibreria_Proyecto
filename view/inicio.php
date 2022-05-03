@@ -18,11 +18,13 @@
 
 <body>
   <!-- <h2 class="text-light"><?=  $_SESSION['usuario'] ?></h2> -->
-  <?php
+  <header>
+      <?php
         require_once "./main/nav.php";
       ?>
+  </header>
   <h1 class="text-light text-center mt-2">La palabra del sabio</h1>
-  <div class="container">
+  <div class="container mb-5">
     <div class="row">
       <div class="col-12">
         <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, officia unde incidunt
@@ -33,16 +35,20 @@
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-              <a href="#"><img src="../public/img/fondo_libreria1.jpg" class="card-img-top" alt="Ir a el catalogo"></a>
-              <a href="#" class="link"><h5 class="card-title text-center mt-3">Catalogo de libros</h5></a>
+                <a href="#"><img src="../public/img/fondo_libreria1.jpg" class="card-img-top" alt="Ir a el catalogo"></a>
+                <a href="#" class="link">
+                  <h5 class="card-title text-center mt-3">Catalogo de libros</h5>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-       
         </div>
       </div>
     </div>
   </div>
+  <footer>
+    <?php require_once "./main/footerwaves.php" ?>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
   </script>
