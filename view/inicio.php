@@ -14,6 +14,7 @@
       require_once "../app/dependencias.php";
     ?>
   <title><?= NOMBRE_TITULO ?></title>
+  <link rel="icon" href="../public/img/icons8-libros-100.png" type="image/svg+xml">
 </head>
 
 <body>

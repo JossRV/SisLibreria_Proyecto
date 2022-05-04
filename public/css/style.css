@@ -268,7 +268,7 @@ header{
 /* tarjeta */
 .tarjetaFlotante{
     width: 100%;
-    min-height: 57vh;
+    height: 62vh;
     position: relative;
     display: flex;
     justify-content: center;
