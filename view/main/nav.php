@@ -18,13 +18,13 @@
                     <span class="icono"><i class="fa-duotone fa-people-group"></i></span>
                     <span class="texto">Nosotros</span>
                 </a>
-            </li>
+            <!-- </li>
             <li>
                 <a href="#">
                     <span class="icono"><i class="fa-duotone fa-user"></i></span>
                     <span class="texto">Perfil</span>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="../procesos/usuarios/salir.php">
                     <span class="icono"><i class="fa-duotone fa-arrow-right-from-bracket"></i></span>

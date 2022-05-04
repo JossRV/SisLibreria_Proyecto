@@ -4,7 +4,7 @@
     <div class="wave" id="wave3"></div>
     <div class="wave" id="wave4"></div>
 </div>
-<ul class="social">
+<!-- <ul class="social">
     <li>
         <a href="#">
             <i class="fa-brands fa-facebook"></i>
@@ -20,7 +20,7 @@
             <i class="fa-brands fa-instagram"></i>
         </a>
     </li>
-</ul>
+</ul> -->
 <ul class="menu">
     <li>
         <a href="./inicio.php">Inicio</a>
@@ -31,8 +31,8 @@
     <li>
         <a href="#">Servicios</a>
     </li>
-    <li>
+    <!-- <li>
         <a href="#">Team</a>
-    </li>
+    </li> -->
 </ul>
 <p>Todos los derechos reservados hecho en 2022 xd</p>
