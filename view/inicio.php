@@ -15,12 +15,15 @@
     ?>
   <title><?= NOMBRE_TITULO ?></title>
   <link rel="icon" href="../public/img/icons8-libros-100.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- <h2 class="text-light"><?=  $_SESSION['usuario'] ?></h2> -->
   <header>
-      <?php
+    <?php
         require_once "./main/nav.php";
       ?>
   </header>
@@ -34,13 +37,13 @@
         <!-- cards -->
         <div class="row d-flex justify-content-center">
           <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <a href="#"><img src="../public/img/fondo_libreria1.jpg" class="card-img-top" alt="Ir a el catalogo"></a>
-                <a href="#" class="link">
-                  <h5 class="card-title text-center mt-3">Catalogo de libros</h5>
-                </a>
-              </div>
+            <div class="card mt-3">
+              <a href="#"><img src="../public/img/713688.jpg" class="card-img-top card-image"
+                  alt="Ir a el catalogo"></a>
+              <h3 class="card-title">Catalogo</h3>
+              <a href="#" class="link">
+                <!-- <h5 class="text-center mt-3">Catalogo de libros</h5> -->
+              </a>
             </div>
           </div>
         </div>
